@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Choices from '../components/Choices';
 import { fetchStoryNode } from '../api';
+import { ReactTyped } from "react-typed";
 
 const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
@@ -33,8 +34,10 @@ const GamePage = () => {
 
   return (
     <div className='min-h-screen flex flex-col items-center justify-center'>
-      <h1 className='text-2xl font-bold'>{currentNode.title}</h1>
-      <p className='mb-6'>{currentNode.description}</p>
+       {/* <h1 className='text-2xl font-bold'>{currentNode.title}</h1>
+       <p className='mb-6'>{currentNode.description}</p> */}
+      <h1 className='text-2xl font-bold' >< ReactTyped strings={[currentNode.title]} typeSpeed={100} showCursor={false}/></h1>
+      <p className='mb-6'>< ReactTyped strings = {[currentNode.description]} typeSpeed={200} showCursor={false}/></p>
       <div>
         {currentNode.choices.map((choice, index) => (
           <Choices
