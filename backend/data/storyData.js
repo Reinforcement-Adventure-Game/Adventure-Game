@@ -40,7 +40,8 @@ const storyNodes = [
         text: 'sneak by, this creature cannot be trusted, you don’t want to risk anything',
         nextNode: 3,
       },
-    ]
+    ],
+    'cave'
   ),
   new StoryBeat(
     3,
@@ -74,11 +75,29 @@ const storyNodes = [
     5,
     'The magic of the forest',
     'You hear a beautiful voice singing, the voice nearly blends with the sound of the wind blowing and the trees rustling. A deep sense of peace washes over you, you want to follow the sound.',
-    { text: 'Follow the voice', nextNode: null },
-    {
-      text: 'the singing is nice, but you continue on your journey, traveling deeper into the woods',
-      nextNode: null,
-    },
+    [
+      { text: 'Follow the voice', nextNode: null },
+      {
+        text: 'the singing is nice, but you continue on your journey, traveling deeper into the woods',
+        nextNode: null,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    6,
+    'Path of least resistance',
+    'You start walking through the forest, choosing the path of least resistance through the thick brush around you. This place is so peaceful, a sense of relief washes over you, thank heavens you didn’t enter that hostile cave back there.',
+    [
+      {
+        text: 'Travel deeper into this lovely forest, follow your heart. You have no plans to return to this place.',
+        nextNode: null,
+      },
+      {
+        text: 'You change your mind. Though it scares you, you sense that something in that cave is calling to you',
+        nextNode: null,
+      },
+    ],
     'forest'
   ),
 ];
