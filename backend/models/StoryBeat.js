@@ -1,18 +1,10 @@
 class StoryBeat {
-  constructor(
-    id,
-    title,
-    description,
-    choices = [],
-    sound = '',
-    backgroundColor = ''
-  ) {
+  constructor(id, title, description, choices = [], location = '') {
     this.id = id;
     this.title = title;
     this.description = description;
-    this.choices = choices; // Array of choices { text: string, nextNode: string }
-    this.sound = sound;
-    this.backgroundColor = backgroundColor;
+    this.choices = choices; // Array of choices indexes (ids);
+    this.location = location;
   }
 }
 
