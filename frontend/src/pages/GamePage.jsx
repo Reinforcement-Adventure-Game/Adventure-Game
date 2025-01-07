@@ -10,7 +10,7 @@ const GamePage = () => {
   useEffect(() => {
     const loadStoryNode = async () => {
       try {
-        const node = await fetchStoryNode('start');
+        const node = await fetchStoryNode(0);
         setCurrentNode(node);
       } catch (err) {
         setError(err.message);
