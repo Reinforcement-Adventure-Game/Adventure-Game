@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Choices = ({ text, onClick }) => {
+const Choices = ({ text, onClick, className }) => {
   return (
-    <button
-      onClick={onClick}
-      className='border p-2 m-2 focus:outline-none hover:bg-gray-200'
-    >
+    <button className={className} onClick={onClick}>
       {text}
     </button>
   );
@@ -14,6 +11,7 @@ const Choices = ({ text, onClick }) => {
 Choices.propTypes = {
   text: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
+  className: PropTypes.string.isRequired,
 };
 
 export default Choices;
