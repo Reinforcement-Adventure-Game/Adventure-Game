@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm:dev:frontend\" \"npm:dev:backend\"",
     "dev:frontend": "vite --port 5173",
-    "dev:backend": "nodemon server.js",
+    "dev:backend": "nodemon backend/server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

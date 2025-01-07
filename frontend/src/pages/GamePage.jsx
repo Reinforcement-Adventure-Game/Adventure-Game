@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
-import { fetchStoryNode } from './api';
+import Choices from '../components/Choices';
+import { fetchStoryNode } from '../api';
 
-const App = () => {
+const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
   const [error, setError] = useState(null);
 
-  // Fetch the first story node on load
   useEffect(() => {
     const loadStoryNode = async () => {
       try {
-        const node = await fetchStoryNode('start'); // Fetch the start node
-        setCurrentNode(node); // Update state
+        const node = await fetchStoryNode(0);
+        setCurrentNode(node);
       } catch (err) {
-        setError(err.message); // Handle errors
+        setError(err.message);
       }
     };
 
@@ -21,10 +21,10 @@ const App = () => {
 
   const handleChoice = async (nextNodeId) => {
     try {
-      const node = await fetchStoryNode(nextNodeId); // Fetch the next node
-      setCurrentNode(node); // Update state
+      const node = await fetchStoryNode(nextNodeId);
+      setCurrentNode(node);
     } catch (err) {
-      setError(err.message); // Handle errors
+      setError(err.message);
     }
   };
 
@@ -37,17 +37,15 @@ const App = () => {
       <p className='mb-6'>{currentNode.description}</p>
       <div>
         {currentNode.choices.map((choice, index) => (
-          <button
+          <Choices
             key={index}
-            className='border p-2 m-2'
+            text={choice.text}
             onClick={() => handleChoice(choice.nextNode)}
-          >
-            {choice.text}
-          </button>
+          />
         ))}
       </div>
     </div>
   );
 };
 
-export default App;
+export default GamePage;
