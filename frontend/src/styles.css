@@ -4,11 +4,20 @@ body {
   padding: 0;
   height: 100%; /* Ensure the height covers the full viewport */
 }
+/* 
+body {
+  background-image: url('./assets/#FFDC98.gif');
+  background-position: center;
+  background-size: cover;
+} */
 
 /* Forest Theme */
 .forest-container {
-  background: #7caf86;
-  background: linear-gradient(to bottom right, #feffe3, #7caf86);
+  /* background: #7caf86;
+  background: linear-gradient(to bottom right, #feffe3, #7caf86); */
+  background-image: url('./assets/flare.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,8 +57,11 @@ body {
 /* Cave Theme */
 
 .cave-container {
-  background: #322e27;
-  background: radial-gradient(circle, black, #322e27);
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/heaven.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,8 +102,11 @@ body {
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  background: #322e27;
-  background: radial-gradient(circle, black, #322e27);
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/heaven.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
