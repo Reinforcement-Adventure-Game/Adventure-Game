@@ -4,12 +4,48 @@ body {
   padding: 0;
   height: 100%; /* Ensure the height covers the full viewport */
 }
-/* 
-body {
-  background-image: url('./assets/#FFDC98.gif');
+
+/* Start Location Theme */
+.start-container {
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/heaven.gif');
   background-position: center;
   background-size: cover;
-} */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffedc9;
+}
+.start-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.start-p {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #ffedc9;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+.start-choiceButton {
+  background-color: #171513;
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+.start-choiceButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
+}
 
 /* Forest Theme */
 .forest-container {
@@ -59,7 +95,7 @@ body {
 .cave-container {
   /* background: #322e27;
   background: radial-gradient(circle, black, #322e27); */
-  background-image: url('./assets/heaven.gif');
+  background-image: url('./assets/blackglow.gif');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
