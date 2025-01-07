@@ -1,4 +1,4 @@
-import StoryBeat from '../models/StoryBeat.js';
+import StoryBeat from '../models/storyBeat.js';
 
 const storyNodes = [
   new StoryBeat(
