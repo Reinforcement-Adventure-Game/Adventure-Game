@@ -1,0 +1,128 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the height covers the full viewport */
+}
+
+/* Forest Theme */
+.forest-container {
+  background: #7caf86;
+  background: linear-gradient(to bottom right, #feffe3, #7caf86);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #feffe3;
+}
+.forest-h1 {
+  font-family: 'DM Serif Text', serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.forest-p {
+  font-family: 'DM Serif Text', serif;
+  font-size: 1.5rem;
+  border: 2px solid #feffe3;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+.forest-choiceButton {
+  background-color: #44724d;
+  color: #feffe3;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'DM Serif Text', serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+.forest-choiceButton:hover {
+  background-color: #44724d;
+  border-color: #feffe3;
+  color: #feffe3;
+}
+
+/* Cave Theme */
+
+.cave-container {
+  background: #322e27;
+  background: radial-gradient(circle, black, #322e27);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffedc9;
+}
+.cave-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.cave-p {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #ffedc9;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.cave-choiceButton {
+  background-color: #171513;
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+.cave-choiceButton:hover {
+  background-color: #171513;
+  border-color: #ffdc98;
+  color: #ffedc9;
+}
+
+/* Heavenly Location Theme */
+.heavenly-container {
+  background: #322e27;
+  background: radial-gradient(circle, black, #322e27);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffedc9;
+}
+.heavenly-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.heavenly-p {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #ffedc9;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+.heavenly-choiceButton {
+  background-color: #171513;
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+.heavenly-choiceButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
+}
