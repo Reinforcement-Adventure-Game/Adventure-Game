@@ -1,4 +1,4 @@
-import StoryBeat from '../models/storyBeat.js';
+import StoryBeat from '../models/StoryBeat.js';
 
 const storyNodes = [
   new StoryBeat(
@@ -56,7 +56,8 @@ const storyNodes = [
         text: 'You don’t answer him, this creature seems shifty, and what sort of question is that? In a place like this? You decide to follow your footprints back to the cave entrance.',
         nextNode: null,
       },
-    ]
+    ],
+    'cave'
   ),
   new StoryBeat(
     4,
