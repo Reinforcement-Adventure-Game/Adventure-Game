@@ -5,10 +5,55 @@ body {
   height: 100%; /* Ensure the height covers the full viewport */
 }
 
+/* Start Location Theme */
+.start-container {
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/heaven.gif');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffedc9;
+}
+.start-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.start-p {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5rem;
+  border: 2px solid #ffedc9;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+.start-choiceButton {
+  background-color: #171513;
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  max-width: 80%;
+  text-align: center;
+}
+.start-choiceButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
+}
+
 /* Forest Theme */
 .forest-container {
-  background: #7caf86;
-  background: linear-gradient(to bottom right, #feffe3, #7caf86);
+  /* background: #7caf86;
+  background: linear-gradient(to bottom right, #feffe3, #7caf86); */
+  background-image: url('./assets/flare.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,8 +93,11 @@ body {
 /* Cave Theme */
 
 .cave-container {
-  background: #322e27;
-  background: radial-gradient(circle, black, #322e27);
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/blackglow.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,8 +138,11 @@ body {
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  background: #322e27;
-  background: radial-gradient(circle, black, #322e27);
+  /* background: #322e27;
+  background: radial-gradient(circle, black, #322e27); */
+  background-image: url('./assets/heaven.gif');
+  background-position: center;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
