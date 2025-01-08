@@ -5,6 +5,13 @@ body {
   height: 100%;
 }
 
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+}
+
 /* Start Location Theme */
 .start-container {
   background-image: url('./assets/start.gif');
@@ -40,8 +47,7 @@ body {
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  max-width: 45%;
-  min-width: fit-content;
+  width: 100%;
   text-align: center;
   white-space: nowrap;
   overflow-wrap: break-word;
@@ -80,18 +86,21 @@ body {
   margin-right: 2rem;
   max-width: 90%;
 }
+
 .forest-choiceButton {
   background-color: rgba(68, 114, 77, 0.4);
-  min-width: 200px;
   color: #feffe3;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  max-width: 45%;
+  width: 100%;
   text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
+
 .forest-choiceButton:hover {
   background-color: #44724d;
   border-color: #fbfbfb;
@@ -136,13 +145,13 @@ body {
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  max-width: 45%;
-  min-width: fit-content;
+  width: 100%;
   text-align: center;
   white-space: nowrap;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
+
 .cave-choiceButton:hover {
   background-color: #171513;
   border-color: #ffdc98;
@@ -180,6 +189,7 @@ body {
   margin-right: 2rem;
   max-width: 90%;
 }
+
 .heavenly-choiceButton {
   background-color: rgb(255, 214, 79, 0.6);
   color: #ffedc9;
@@ -187,9 +197,11 @@ body {
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  max-width: 45%;
+  width: 100%;
   text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .heavenly-choiceButton:hover {
   background-color: #fcfcfc;
