@@ -196,3 +196,49 @@ body {
   border-color: #cb87dc;
   color: #484131;
 }
+
+/* Fire Theme */
+.fire-container {
+  background-image: url('./assets/fire.gif');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f37d15;
+}
+.fire-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f37d15;
+}
+.fire-p {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  background-color: rgba(179, 48, 5, 0.5);
+  max-width: 90%;
+}
+.fire-choiceButton {
+  background-color: rgba(179, 48, 5, 0.5);
+  color: #f37d15;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  max-width: 45%;
+  min-width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.fire-choiceButton:hover {
+  border-color: #ff9602;
+  color: #f37d15;
+}
