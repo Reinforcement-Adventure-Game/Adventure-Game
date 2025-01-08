@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Choices from '../components/Choices';
 import { fetchStoryNode } from '../api';
 import '../styles.css';
@@ -7,6 +7,7 @@ import { ReactTyped } from 'react-typed';
 const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
   const [error, setError] = useState(null);
+  const audioRef = useRef(null);
 
   useEffect(() => {
     const loadStoryNode = async () => {
@@ -35,6 +36,10 @@ const GamePage = () => {
 
   return (
     <div className={`${currentNode.location}-container`}>
+      <audio ref={audioRef} loop autoPlay>
+        <source src='' type='audio/mpeg' />
+        Your browser does not support the audio element.
+      </audio>
       <h1 className={`${currentNode.location}-h1`}>
         <ReactTyped
           strings={[currentNode.title]}
@@ -42,9 +47,7 @@ const GamePage = () => {
           showCursor={false}
         />
       </h1>
-      <p className={`${currentNode.location}-p`}>
-        {currentNode.description}
-      </p>
+      <p className={`${currentNode.location}-p`}>{currentNode.description}</p>
       <div>
         {currentNode.choices.map((choice, index) => (
           <Choices
