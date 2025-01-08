@@ -112,7 +112,9 @@ const GamePage = () => {
         </button>
       )}
       {!hasInteracted ? (
-        <button onClick={handleStartGame}>Start Game</button>
+        <button className='btn-start' onClick={handleStartGame}>
+          Start Game
+        </button>
       ) : (
         <>
           <audio ref={audioRef} loop autoPlay>
