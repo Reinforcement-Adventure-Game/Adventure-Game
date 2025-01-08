@@ -38,6 +38,7 @@ body {
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
   background-color: rgba(23, 21, 19, 0.5);
+  max-width: 90%;
 }
 .start-choiceButton {
   background-color: rgba(23, 21, 19, 0.5);
@@ -83,6 +84,7 @@ body {
   background-color: rgba(68, 114, 77, 0.4);
   margin-left: 2rem;
   margin-right: 2rem;
+  max-width: 90%;
 }
 
 .forest-choiceButton {
@@ -134,6 +136,7 @@ body {
   margin-left: 2rem;
   margin-right: 2rem;
   background-color: rgba(23, 21, 19, 0.5);
+  max-width: 90%;
 }
 .cave-choiceButton {
   background-color: rgba(23, 21, 19, 0.5);
@@ -184,6 +187,7 @@ body {
   background-color: rgba(255, 214, 79, 0.6);
   margin-left: 2rem;
   margin-right: 2rem;
+  max-width: 90%;
 }
 
 .heavenly-choiceButton {
