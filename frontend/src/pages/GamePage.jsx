@@ -37,7 +37,7 @@ const GamePage = () => {
 		<div className={`${currentNode.location}-container`}>
 			<h1 className={`${currentNode.location}-h1`}>< ReactTyped strings={[currentNode.title]} typeSpeed={100} showCursor={false}/></h1>
 			<p className={`${currentNode.location}-p`}>< ReactTyped strings = {[currentNode.description]} typeSpeed={30} showCursor={false}/></p>
-			<div>
+			<div className='choice-container'>
 				{currentNode.choices.map((choice, index) => (
 					<Choices
 						key={index}
