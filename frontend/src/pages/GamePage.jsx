@@ -44,7 +44,7 @@ const GamePage = () => {
 
   const handleStartGame = () => {
     setHasInteracted(true);
-    if (audioRef.current) {
+    if (audioRef.current && audioFile) {
       console.log('Playing audio file:', audioFile);
       audioRef.current.play().catch((err) => {
         console.error('Audio playback failed:', err);
