@@ -136,8 +136,8 @@ const storyNodes = [
   ),
   new StoryBeat(
     9,
-    'Weary Traveller’s End',
-    'Weary traveller, it seems you have met your end. If only things had turned out differently, what a sad way to meet your fate.',
+    'Weary Traveler’s End',
+    'Weary traveler, it seems you have met your end. If only things had turned out differently, what a sad way to meet your fate.',
     [
       {
         text: 'You make peace with your end. After all, it’s been such an adventure.',
@@ -152,16 +152,64 @@ const storyNodes = [
   ),
   new StoryBeat(
     10,
-    'The Magic of the Forest',
-    'You hear a beautiful voice singing, the voice nearly blends with the sound of the wind blowing and the trees rustling. A deep sense of peace washes over you, you want to follow the sound.',
+    'A chance encounter',
+    'A voice erupts from the quiet of the forest, You’re surprised to see another person so deep in these woods. “Hello Stranger, you’re looking a little lost, care to travel together? I can be your navigator.” they exclaim, with what seems to be a genuine grin.',
     [
-      { text: 'Follow the voice', nextNode: null },
       {
-        text: 'the singing is nice, but you continue on your journey, traveling deeper into the woods',
+        text: 'Sure, I could use a navigator, you seem like a trustworthy traveler.',
         nextNode: null,
+      },
+      {
+        text: '“No, thank you, I like to travel alone, good day to you.” Why would you trust a stranger?',
+        nextNode: 11,
       },
     ],
     'forest'
+  ),
+  new StoryBeat(
+    11,
+    'Traveling Alone',
+    'You continue through the woods alone. It’s ironic really, only a moment later you fall into a deep crevasse. If only you hadn’t been travelling alone, surely your navigator would’ve seen this bottomless hole in the ground. But you were too proud to have a navigator, so now you’re falling and falling and falling.',
+    [
+      { text: 'oh no', nextNode: 12 },
+      {
+        text: 'oh no!',
+        nextNode: 12,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    12,
+    'A Dangerous Encounter',
+    'You open your eyes to find that you fell quite a distance, and you’re now deep below ground in a fiery cave, lava flowing around you. A sense of peril and despair sinks into your heart. Then, an ear piercing screech fills the cave. A terrifying beast stands before you.',
+    [
+      {
+        text: 'Channelling all of the courage from deep in your heart, you rise to face the beast.',
+        nextNode: 13,
+      },
+      {
+        text: 'Sheer terror overcomes you, you cower behind a large rock and peek around to catch a glance at the beast.',
+        nextNode: 13,
+      },
+    ],
+    'fireycave'
+  ),
+  new StoryBeat(
+    13,
+    'the OSPhelion',
+    'You lay eyes on this winged creature, which resembles a cross between an owl and a serpent, with shimmering feathers that glisten in the orange glow of the flames. You’ve heard of this monster in legends, the Osphelion, known for its cunning nature and paralyzing gaze. It’s bright yellow eyes are piercing, it’s looking right at you.',
+    [
+      {
+        text: 'You freeze, paralyzed with fear, hoping it hasn’t really seen you.',
+        nextNode: 14,
+      },
+      {
+        text: 'You step forward, square your chest to the creature, and exclaim “My name is C. Smith, I am a brave traveler, brave enough to face you, OSPhelion.',
+        nextNode: 14,
+      },
+    ],
+    'fireycave'
   ),
 ];
 
