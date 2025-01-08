@@ -60,11 +60,9 @@ body {
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 .start-backButton:hover {
   border-color: #ffdc98;
