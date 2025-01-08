@@ -193,7 +193,7 @@ const storyNodes = [
         nextNode: 13,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     13,
@@ -205,15 +205,15 @@ const storyNodes = [
         nextNode: 14,
       },
       {
-        text: 'You step forward, square your chest to the creature, and exclaim “My name is C. Smith, I am a brave traveler, brave enough to face you, OSPhelion.',
+        text: 'You step forward, square your chest to the creature, and exclaim “I am a brave traveler, brave enough to face you, OSPhelion.',
         nextNode: 15,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     14,
-    "the Creature's Wisdom",
+    "Fight or Flight",
     'Despite your attempt to hide, it is clear that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "You cannot hide from me, traveler, nor should you try. I mean you no harm. Face what terrifies you, this is the only way to meet your fate."',
     [
       {
@@ -225,11 +225,11 @@ const storyNodes = [
         nextNode: 16,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     15,
-    "the Creature's Wisdom",
+    "Fight or Flight",
     'It\'s clear now that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "Brave traveler indeed. You can tell I am no enemy to you, you are wise. Facing your fears is what will get you where you need to go. I assume a human like you has no desire to stay in this fiery place."',
     [
       {
@@ -241,7 +241,7 @@ const storyNodes = [
         nextNode: 17,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     16,
@@ -257,23 +257,71 @@ const storyNodes = [
         nextNode: 9,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     17,
-    'title',
-    'description',
+    'The Long Journey to the Surface',
+    '"Of course I can, I\'ll fly you back to the surface," the creature lowers it\'s neck and you hop on, grasping to its feathers for dear life. "Hold on tight, this could take 3-6 months in the current market conditions" it bellows. The Osphelion takes off in flight.',
     [
       {
-        text: 'option',
-        nextNode: 1,
+        text: 'About 1 month into this flight from 20,000 meters below ground, you begin to doubt that this was a good idea at all. You begin to loosen your grasp a bit.',
+        nextNode: 9,
       },
       {
-        text: 'option',
-        nextNode: 1,
+        text: 'This journey indeed is a long one, you are tired and hungry, but you stay diligent and hold tight.',
+        nextNode: 18,
       },
     ],
-    'cave'
+    'fireycave'
+  ),
+  new StoryBeat(
+    18,
+    'Smithing Town',
+    'The journey was long, but sure enough, you cross the threshold above ground. "Where are we?" You ask the Osphelion, wind blowing through your hair as you land in some sort of village, bustling with people. "In this town reside many mid to senior level smiths, you\'ll fit right in here." The Osphelion explains.',
+    [
+      {
+        text: 'A sense of relief washes over you, you feel very proud to have stayed strong through the long journey.',
+        nextNode: 19,
+      },
+      {
+        text: 'You feel surprised. You had begun to doubt that you\'d ever make it back to the surface. You sense that it was just luck that you made it out.',
+        nextNode: 19,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    19,
+    'Happily Ever After',
+    'You make a life for yourself in the town of the smiths. You continue to seek new adventures and learn new lessons. You are not known far and wide, but to those who know you, you are considered very brave.',
+    [
+      {
+        text: 'Feeling contented with the fruits of your labor, you live a comfortable life among the other smiths.',
+        nextNode: 20,
+      },
+      {
+        text: 'Feeling restless, you leave the town of the smiths, and set out for a new adventure.',
+        nextNode: 0,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    9,
+    'You died.',
+    'You lived a long life and now your time has come to pass, time for one last journey.',
+    [
+      {
+        text: 'You make peace with your end. After all, it’s been such an adventure.',
+        nextNode: 0,
+      },
+      {
+        text: 'You die bitter, with hate in your heart, this is so unfair.',
+        nextNode: 0,
+      },
+    ],
+    'heavenly'
   ),
 ];
 export default storyNodes;
