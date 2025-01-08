@@ -45,7 +45,7 @@ const GamePage = () => {
       <p className={`${currentNode.location}-p`}>
         {currentNode.description}
       </p>
-      <div>
+      <div className='choice-container'>
         {currentNode.choices.map((choice, index) => (
           <Choices
             key={index}
