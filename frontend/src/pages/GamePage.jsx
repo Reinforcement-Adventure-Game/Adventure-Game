@@ -14,7 +14,7 @@ const GamePage = () => {
   const audioRef = useRef(null);
 
   const audioCache = {
-    start: '../assets/audio/cave-ambiance.mp3',
+    start: '../assets/audio/start-ambiance.mp3',
     cave: '../assets/audio/cave-ambiance.mp3',
     fireycave: '../assets/audio/firey-cave-ambiance.mp3',
     forest: '../assets/audio/forest-ambiance.mp3',
