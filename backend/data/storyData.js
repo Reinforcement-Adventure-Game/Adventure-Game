@@ -98,7 +98,7 @@ const storyNodes = [
     'A venomous meadow snake, common but deadly, was just eating an apple when he was pinned beneath you when you laid down to rest. He’s a nice snake, really, but when he was trying to free himself from getting squashed beneath you, he accidentally bit you.',
     [
       { text: 'Oh no.', nextNode: 7 },
-      { text: 'Oh no.', nextNode: 7 },
+      { text: 'Oh noooo!', nextNode: 7 },
     ],
     'forest'
   ),
@@ -213,7 +213,7 @@ const storyNodes = [
   ),
   new StoryBeat(
     14,
-    "Fight or Flight",
+    'Fight or Flight',
     'Despite your attempt to hide, it is clear that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "You cannot hide from me, traveler, nor should you try. I mean you no harm. Face what terrifies you, this is the only way to meet your fate."',
     [
       {
@@ -229,7 +229,7 @@ const storyNodes = [
   ),
   new StoryBeat(
     15,
-    "Fight or Flight",
+    'Fight or Flight',
     'It\'s clear now that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "Brave traveler indeed. You can tell I am no enemy to you, you are wise. Facing your fears is what will get you where you need to go. I assume a human like you has no desire to stay in this fiery place."',
     [
       {
@@ -285,7 +285,7 @@ const storyNodes = [
         nextNode: 19,
       },
       {
-        text: 'You feel surprised. You had begun to doubt that you\'d ever make it back to the surface. You sense that it was just luck that you made it out.',
+        text: "You feel surprised. You had begun to doubt that you'd ever make it back to the surface. You sense that it was just luck that you made it out.",
         nextNode: 19,
       },
     ],
@@ -308,8 +308,24 @@ const storyNodes = [
     'forest'
   ),
   new StoryBeat(
-    9,
+    20,
     'You died.',
+    'You lived a long life and now your time has come to pass, time for one last journey.',
+    [
+      {
+        text: 'You make peace with your end. After all, it’s been such an adventure.',
+        nextNode: 0,
+      },
+      {
+        text: 'You die bitter, with hate in your heart, this is so unfair.',
+        nextNode: 0,
+      },
+    ],
+    'heavenly'
+  ),
+  new StoryBeat(
+    21,
+    '',
     'You lived a long life and now your time has come to pass, time for one last journey.',
     [
       {
