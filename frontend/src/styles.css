@@ -2,17 +2,16 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%; /* Ensure the height covers the full viewport */
+  height: 100%;
 }
 
 /* Start Location Theme */
 .start-container {
-  /* background: #322e27;
-  background: radial-gradient(circle, black, #322e27); */
-  background-image: url('./assets/heaven.gif');
+  background-image: url('./assets/start.gif');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +20,9 @@ body {
 }
 .start-h1 {
   font-family: 'Jersey 15', sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
+  color: #171513;
 }
 .start-p {
   font-family: 'Jersey 15', sans-serif;
@@ -30,17 +30,21 @@ body {
   border: 2px solid #ffedc9;
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
+  background-color: rgba(23, 21, 19, 0.5);
 }
 .start-choiceButton {
-  background-color: #171513;
+  background-color: rgba(23, 21, 19, 0.5);
   color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  max-width: 80%;
+  max-width: 45%;
+  min-width: fit-content;
   text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .start-choiceButton:hover {
   border-color: #ffdc98;
@@ -49,8 +53,6 @@ body {
 
 /* Forest Theme */
 .forest-container {
-  /* background: #7caf86;
-  background: radial-gradient(circle, #feffe3, #7caf86); */
   background-image: url('./assets/flare.gif');
   background-position: center;
   background-size: cover;
@@ -62,30 +64,30 @@ body {
   color: #feffe3;
 }
 .forest-h1 {
-  font-family: 'DM Serif Text', serif;
+  font-family: 'Jersey 15', sans-serif;
   font-size: 4rem;
   font-weight: bold;
   color: #44724d;
 }
 .forest-p {
-  font-family: 'DM Serif Text', serif;
+  font-family: 'Jersey 15', sans-serif;
   font-size: 1.5rem;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
+  background-color: rgba(68, 114, 77, 0.4);
   margin-left: 2rem;
   margin-right: 2rem;
-  background-color: #44724d;
 }
 .forest-choiceButton {
-  background-color: #44724d;
+  background-color: rgba(68, 114, 77, 0.4);
   min-width: 200px;
   color: #feffe3;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  font-family: 'DM Serif Text', serif;
+  font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  max-width: 80%;
+  max-width: 45%;
   text-align: center;
 }
 .forest-choiceButton:hover {
@@ -95,19 +97,19 @@ body {
 }
 
 /* Cave Theme */
-
 .cave-container {
-  /* background: #322e27;
-  background: radial-gradient(circle, black, #322e27); */
   background-image: url('./assets/blackglow.gif');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #ffedc9;
+  flex-wrap: nowrap;
+  max-width: 100%;
 }
 .cave-h1 {
   font-family: 'Jersey 15', sans-serif;
@@ -122,17 +124,21 @@ body {
   padding: 1rem 1.25rem;
   margin-left: 2rem;
   margin-right: 2rem;
+  background-color: rgba(23, 21, 19, 0.5);
 }
 .cave-choiceButton {
-  background-color: #171513;
+  background-color: rgba(23, 21, 19, 0.5);
   color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-  max-width: 80%;
+  max-width: 45%;
+  min-width: fit-content;
   text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .cave-choiceButton:hover {
   background-color: #171513;
@@ -142,9 +148,7 @@ body {
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  /* background: #322e27;
-  background: radial-gradient(circle, rgb(255, 217, 136), #fcfcfc); */
-  background-image: url('./assets/heaven.gif');
+  background-image: url('./assets/heavenly.gif');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -157,6 +161,7 @@ body {
 .heavenly-h1 {
   font-family: 'Jersey 15', sans-serif;
   font-size: 4rem;
+  font-size: 4rem;
   font-weight: bold;
   color: #e7a711;
 }
@@ -167,18 +172,19 @@ body {
   font-size: 1.5rem;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
+  background-color: rgba(255, 214, 79, 0.6);
   margin-left: 2rem;
   margin-right: 2rem;
 }
 .heavenly-choiceButton {
-  background-color: #fcfcfc;
-  color: #484131;
+  background-color: rgb(255, 214, 79, 0.6);
+  color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
   margin-bottom: 1.5rem;
-  max-width: 80%;
+  max-width: 45%;
   text-align: center;
 }
 .heavenly-choiceButton:hover {
