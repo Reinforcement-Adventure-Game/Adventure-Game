@@ -15,7 +15,7 @@ const GamePage = () => {
   const audioCache = {
     start: '../assets/audio/cave-ambiance.mp3',
     cave: '../assets/audio/cave-ambiance.mp3',
-    fireyCave: '../assets/audio/firey-cave-ambiance.mp3',
+    fireycave: '../assets/audio/firey-cave-ambiance.mp3',
     forest: '../assets/audio/forest-ambiance.mp3',
     mountain: '../assets/audio/mountain-ambiance.mp3',
     heavenly: '../assets/audio/heavenly-ambiance.mp3',
