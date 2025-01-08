@@ -5,13 +5,6 @@ body {
   height: 100%;
 }
 
-.choice-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
 /* Start Location Theme */
 .start-container {
   background-image: url('./assets/start.gif');
@@ -47,7 +40,8 @@ body {
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  width: 100%;
+  max-width: 45%;
+  min-width: fit-content;
   text-align: center;
   white-space: nowrap;
   overflow-wrap: break-word;
@@ -86,21 +80,18 @@ body {
   margin-right: 2rem;
   max-width: 90%;
 }
-
 .forest-choiceButton {
   background-color: rgba(68, 114, 77, 0.4);
+  min-width: 200px;
   color: #feffe3;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  width: 100%;
+  margin-bottom: 1.5rem;
+  max-width: 45%;
   text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
-
 .forest-choiceButton:hover {
   background-color: #44724d;
   border-color: #fbfbfb;
@@ -145,13 +136,13 @@ body {
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  width: 100%;
+  max-width: 45%;
+  min-width: fit-content;
   text-align: center;
   white-space: nowrap;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
-
 .cave-choiceButton:hover {
   background-color: #171513;
   border-color: #ffdc98;
@@ -160,7 +151,6 @@ body {
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  background-image: url('./assets/heaven.gif');
   background-image: url('./assets/heaven.gif');
   background-position: center;
   background-size: cover;
@@ -179,7 +169,7 @@ body {
   color: #171513;
 }
 .heavenly-p {
-  background-color: rgba(23, 21, 19, 0.5);
+  background-color: (23, 21, 19, 0.5);
   color: #ffedc9;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.5rem;
@@ -189,72 +179,21 @@ body {
   margin-right: 2rem;
   max-width: 90%;
 }
-
 .heavenly-choiceButton {
-  background-color: rgb(255, 214, 79, 0.6);
+  background-color: (23, 21, 19, 0.5);
   color: #484131;
-  background-color: rgba(23, 21, 19, 0.5);
-  color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.25rem;
-  width: 100%;
+  margin-bottom: 1.5rem;
+  max-width: 45%;
   text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 .heavenly-choiceButton:hover {
   border-color: #ffdc98;
   color: #ffedc9;
   border-color: #ffffff;
-}
-
-/* Fire Theme */
-.fire-container {
-  background-image: url('./assets/fire.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f37d15;
-}
-.fire-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #f37d15;
-}
-.fire-p {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
-  background-color: rgba(179, 48, 5, 0.5);
-  max-width: 90%;
-}
-.fire-choiceButton {
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  max-width: 45%;
-  min-width: fit-content;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-.fire-choiceButton:hover {
-  border-color: #ff9602;
-  color: #f37d15;
 }
 
 /* Fire Theme */
