@@ -6,6 +6,7 @@ import { ReactTyped } from 'react-typed';
 
 const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
+  const [history, setHistory] = useState([]);
   const [error, setError] = useState(null);
   const [audioFile, setAudioFile] = useState(null);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -75,6 +76,9 @@ const GamePage = () => {
 
   const handleChoice = async (nextNodeId) => {
     try {
+      if (currentNode) {
+        setHistory([currentNode]);
+      }
       const fetchedNode = await fetchStoryNode(nextNodeId);
       setCurrentNode(fetchedNode);
       setAudioFile(audioCache[fetchedNode.location]);
@@ -83,6 +87,14 @@ const GamePage = () => {
       console.log('audioFile', audioFile);
     } catch (err) {
       setError(err.message);
+    }
+  };
+
+  const handleBack = () => {
+    if (history.length > 0) {
+      const lastNode = history[history.length - 1];
+      setHistory((prev) => prev.slice(0, -1));
+      setCurrentNode(lastNode);
     }
   };
 
@@ -123,6 +135,14 @@ const GamePage = () => {
             ))}
           </div>
         </>
+      )}
+      {history.length > 0 && (
+        <button
+          onClick={handleBack}
+          className={`${currentNode.location}-backButton`}
+        >
+          Back
+        </button>
       )}
     </div>
   );
