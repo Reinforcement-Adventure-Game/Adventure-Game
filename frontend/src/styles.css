@@ -278,28 +278,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f37d15;
 }
 .fireycave-h1 {
   font-family: 'Jersey 15', sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  color: #f37d15;
+  color: #ffedc9;
 }
 .fireycave-p {
   font-family: 'Jersey 15', sans-serif;
   font-size: 1.5rem;
   border-radius: 0.5rem;
   padding: 1rem 1.25rem;
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
   margin-left: 2rem;
   margin-right: 2rem;
   max-width: 90%;
 }
 .fireycave-choiceButton {
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
@@ -311,8 +310,8 @@ body {
   word-wrap: break-word;
 }
 .fireycave-backButton {
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   font-family: 'Jersey 15', sans-serif;
@@ -322,10 +321,10 @@ body {
   left: 10px;
 }
 .fireycave-backButton:hover {
-  border-color: #ff9602;
-  color: #f37d15;
+  border-color: #eb5025;
+  color: #eb5025;
 }
 .fireycave-choiceButton:hover {
-  border-color: #ff9602;
-  color: #f37d15;
+  border-color: #eb5025;
+  color: #eb5025;
 }

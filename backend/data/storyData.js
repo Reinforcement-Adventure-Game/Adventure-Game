@@ -50,7 +50,7 @@ const storyNodes = [
     [
       {
         text: 'A strange question to ask me in a place like this, but if you must know, I seek wealth in my travels',
-        nextNode: null,
+        nextNode: 0,
       },
       {
         text: 'You don’t answer him, this creature seems shifty, and what sort of question is that? In a place like this? You decide to follow your footprints back to the cave entrance.',
@@ -157,7 +157,7 @@ const storyNodes = [
     [
       {
         text: 'Sure, I could use a navigator, you seem like a trustworthy traveler.',
-        nextNode: null,
+        nextNode: 0,
       },
       {
         text: '“No, thank you, I like to travel alone, good day to you.” Why would you trust a stranger?',
@@ -181,7 +181,7 @@ const storyNodes = [
   ),
   new StoryBeat(
     12,
-    'A Dangerous Encounter',
+    'The Depths',
     "You open your eyes to find that you fell quite a distance, 20,000 dollars, I mean meters, below ground, and you're now in a fiery cave, lava flowing around you. A sense of peril and despair sinks into your heart. Then, an ear piercing screech fills the cave. A terrifying beast stands before you.",
     [
       {
