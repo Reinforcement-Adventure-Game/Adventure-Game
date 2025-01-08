@@ -103,8 +103,11 @@ const GamePage = () => {
 
   return (
     <div className={`${currentNode.location}-container`}>
-      {history.length > 0 && (
-        <button className='btn-audio' onClick={handleAudio}>
+      {currentNode && (
+        <button
+          className={`${currentNode.location}-audioButton`}
+          onClick={handleAudio}
+        >
           {isPlaying ? 'Pause Audio' : 'Play Audio'}
         </button>
       )}

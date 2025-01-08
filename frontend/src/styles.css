@@ -76,8 +76,7 @@ body {
   color: #ffedc9;
 }
 
-/* Audio Control Button */
-.btn-audio {
+.start-audioButton {
   background-color: rgba(23, 21, 19, 0.5);
   color: #ffedc9;
   padding: 1rem 2rem;
@@ -90,9 +89,12 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.btn-audio:hover {
+.start-audioButton:hover {
   border-color: #ffdc98;
   color: #ffedc9;
 }
@@ -158,6 +160,29 @@ body {
   background-color: #44724d;
   border-color: #fbfbfb;
   color: #fbfbfb;
+}
+
+.forest-audioButton {
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.forest-audioButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
 }
 
 /* Cave Theme */
@@ -226,6 +251,29 @@ body {
   color: #ffedc9;
 }
 
+.cave-audioButton {
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.cave-audioButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
+}
+
 /* Heavenly Location Theme */
 .heavenly-container {
   background-image: url('./assets/heaven.gif');
@@ -286,6 +334,29 @@ body {
   border-color: #ffdc98;
   color: #ffedc9;
   border-color: #ffffff;
+}
+
+.heavenly-audioButton {
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.heavenly-audioButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
 }
 
 /* Fire Theme */
@@ -349,4 +420,27 @@ body {
 .fireycave-choiceButton:hover {
   border-color: #ff9602;
   color: #f37d15;
+}
+
+.fireycave-audioButton {
+  background-color: rgba(23, 21, 19, 0.5);
+  color: #ffedc9;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.25rem;
+  width: fit-content;
+  text-align: center;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fireycave-audioButton:hover {
+  border-color: #ffdc98;
+  color: #ffedc9;
 }
