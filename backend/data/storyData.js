@@ -95,7 +95,7 @@ const storyNodes = [
   new StoryBeat(
     6,
     'A Venomous Encounter',
-    'A venomous meadow snake, common but deadly, was pinned beneath you when you laid down to rest. He’s a nice snake, really, but when he was trying to free himself from getting squashed beneath you, he accidentally bit you.',
+    'A venomous meadow snake, common but deadly, was just eating an apple when he was pinned beneath you when you laid down to rest. He’s a nice snake, really, but when he was trying to free himself from getting squashed beneath you, he accidentally bit you.',
     [
       { text: 'Oh no.', nextNode: 7 },
       { text: 'Oh no.', nextNode: 7 },
@@ -128,7 +128,7 @@ const storyNodes = [
         nextNode: 9,
       },
       {
-        text: 'My apologies for nearly squashing you, Mr. Snake. It seems to me that both of us are lucky to walk away.',
+        text: 'My apologies for nearly squashing you, Mr. Snake. It seems to me that both of us are lucky to walk away from this alive, or should I say slither away...',
         nextNode: '10',
       },
     ],
@@ -193,7 +193,7 @@ const storyNodes = [
         nextNode: 13,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     13,
@@ -205,20 +205,20 @@ const storyNodes = [
         nextNode: 14,
       },
       {
-        text: 'You step forward, square your chest to the creature, and exclaim “My name is C. Smith, I am a brave traveler, brave enough to face you, OSPhelion.',
+        text: 'You step forward, square your chest to the creature, and exclaim “I am a brave traveler, brave enough to face you, OSPhelion.',
         nextNode: 15,
       },
     ],
-    'cave'
+    'fireycave'
   ),
   new StoryBeat(
     14,
-    "the Creature's Wisdom",
-    'Despite your attempt to hide, it is clear that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "You cannot hide from me, traveler, nor should you try. Face what terrifies you, this is the only way to meet your fate."',
+    "Fight or Flight",
+    'Despite your attempt to hide, it is clear that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "You cannot hide from me, traveler, nor should you try. I mean you no harm. Face what terrifies you, this is the only way to meet your fate."',
     [
       {
-        text: "Wow, that's quite profound, actually.",
-        nextNode: 16,
+        text: "Wow, that's quite profound, actually. So if I put my fears aside and face you, can you get me out of this place?",
+        nextNode: 17,
       },
       {
         text: 'This must be a trap, the Osphelion wants me to let my guard down, now is my chance to run away.',
@@ -229,30 +229,99 @@ const storyNodes = [
   ),
   new StoryBeat(
     15,
-    "the Creature's Wisdom",
-    'It\'s clear now that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "Brave traveler indeed, you can tell I am no enemy to you, you are wise. I may be intimidating, but I can get you where you need to go."',
+    "Fight or Flight",
+    'It\'s clear now that the Osphelion has taken notice of you. It steps forward, with massive talons, swiftly closing the distance you had left between you. It opens its beak as if to gobble you up, but instead it speaks, "Brave traveler indeed. You can tell I am no enemy to you, you are wise. Facing your fears is what will get you where you need to go. I assume a human like you has no desire to stay in this fiery place."',
     [
       {
-        text: '.',
-        nextNode: 14,
+        text: 'This must be a trap, the Osphelion wants me to let my guard down, now is my chance to run away.',
+        nextNode: 16,
       },
       {
-        text: 'You step forward, square your chest to the creature, and exclaim “My name is C. Smith, I am a brave traveler, brave enough to face you, OSPhelion.',
-        nextNode: 14,
+        text: "You're right, Osphelion, I want out of this place, can you help me?",
+        nextNode: 17,
       },
     ],
     'fireycave'
   ),
+  new StoryBeat(
+    16,
+    'A futile attempt',
+    "You  make a break for it, but wait, where can you actually run to? You're already 20,000 dollars, I mean meters, below ground. You stop for a moment, looking all around frantically for a way out. You can hear the Osphelion approaching behind you, the scraping of its giant talons on the cave floor. You begin running again, sure that the Osphelion will tear you to shreds. You trip on a rock and fall head first into the lava. ",
+    [
+      {
+        text: 'oh no',
+        nextNode: 9,
+      },
+      {
+        text: 'oh no',
+        nextNode: 9,
+      },
+    ],
+    'fireycave'
+  ),
+  new StoryBeat(
+    17,
+    'The Long Journey to the Surface',
+    '"Of course I can, I\'ll fly you back to the surface," the creature lowers it\'s neck and you hop on, grasping to its feathers for dear life. "Hold on tight, this could take 3-6 months in the current market conditions" it bellows. The Osphelion takes off in flight.',
+    [
+      {
+        text: 'About 1 month into this flight from 20,000 meters below ground, you begin to doubt that this was a good idea at all. You begin to loosen your grasp a bit.',
+        nextNode: 9,
+      },
+      {
+        text: 'This journey indeed is a long one, you are tired and hungry, but you stay diligent and hold tight.',
+        nextNode: 18,
+      },
+    ],
+    'fireycave'
+  ),
+  new StoryBeat(
+    18,
+    'Smithing Town',
+    'The journey was long, but sure enough, you cross the threshold above ground. "Where are we?" You ask the Osphelion, wind blowing through your hair as you land in some sort of village, bustling with people. "In this town reside many mid to senior level smiths, you\'ll fit right in here." The Osphelion explains.',
+    [
+      {
+        text: 'A sense of relief washes over you, you feel very proud to have stayed strong through the long journey.',
+        nextNode: 19,
+      },
+      {
+        text: 'You feel surprised. You had begun to doubt that you\'d ever make it back to the surface. You sense that it was just luck that you made it out.',
+        nextNode: 19,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    19,
+    'Happily Ever After',
+    'You make a life for yourself in the town of the smiths. You continue to seek new adventures and learn new lessons. You are not known far and wide, but to those who know you, you are considered very brave.',
+    [
+      {
+        text: 'Feeling contented with the fruits of your labor, you live a comfortable life among the other smiths.',
+        nextNode: 20,
+      },
+      {
+        text: 'Feeling restless, you leave the town of the smiths, and set out for a new adventure.',
+        nextNode: 0,
+      },
+    ],
+    'forest'
+  ),
+  new StoryBeat(
+    9,
+    'You died.',
+    'You lived a long life and now your time has come to pass, time for one last journey.',
+    [
+      {
+        text: 'You make peace with your end. After all, it’s been such an adventure.',
+        nextNode: 0,
+      },
+      {
+        text: 'You die bitter, with hate in your heart, this is so unfair.',
+        nextNode: 0,
+      },
+    ],
+    'heavenly'
+  ),
 ];
-
-// 2.0 ‘You start walking through the forest, choosing the path of least resistance through the thick brush around you. This place is so peaceful, a sense of relief washes over you, thank heavens you didn’t enter that hostile cave back there.’
-
-//const caveTravel = new StoryBeat();
-
-// 1.2 ‘ You continue forward, the path is dimly illuminated, but fading as you travel further past the torch. You hear something behind a stalagmite about a meter away from you, is that laughter? You can’t tell if this snickering seems unfriendly, what’s so funny inside of this dark place?
-// { text: announce yourself, and demand to know who this is, what are they laughing at?,
-//       nextNode: ‘TBD',  },
-//     { text: 'sneak by, this creature cannot be trusted, you don’t want to risk anything',
-//       nextNode: ‘either way you encounter him’,  },
-
 export default storyNodes;
