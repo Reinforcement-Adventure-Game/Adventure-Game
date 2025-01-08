@@ -98,7 +98,7 @@ const storyNodes = [
     'A venomous meadow snake, common but deadly, was just eating an apple when he was pinned beneath you when you laid down to rest. He’s a nice snake, really, but when he was trying to free himself from getting squashed beneath you, he accidentally bit you.',
     [
       { text: 'Oh no.', nextNode: 7 },
-      { text: 'Oh no.', nextNode: 7 },
+      { text: 'Oh noooo!', nextNode: 7 },
     ],
     'forest'
   ),
