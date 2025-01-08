@@ -8,15 +8,17 @@ const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
   const [error, setError] = useState(null);
   const [audioFile, setAudioFile] = useState(null);
-  const [hasInteracted, setHasInteracted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef(null);
 
   const audioCache = {
     start: '../assets/audio/cave-ambiance.mp3',
     cave: '../assets/audio/cave-ambiance.mp3',
-    forest: '../assets/audio/cave-ambiance.mp3',
-    mountain: '../assets/audio/cave-ambiance.mp3',
+    fireyCave: '../assets/audio/firey-cave-ambiance.mp3',
+    forest: '../assets/audio/forest-ambiance.mp3',
+    mountain: '../assets/audio/mountain-ambiance.mp3',
+    heavenly: '../assets/audio/heavenly-ambiance.mp3',
   };
 
   useEffect(() => {
@@ -57,8 +59,8 @@ const GamePage = () => {
 
   const handleChoice = async (nextNodeId) => {
     try {
-      const node = await fetchStoryNode(nextNodeId);
-      setCurrentNode(node);
+      const fetchedNode = await fetchStoryNode(nextNodeId);
+      setCurrentNode(fetchedNode);
     } catch (err) {
       setError(err.message);
     }
