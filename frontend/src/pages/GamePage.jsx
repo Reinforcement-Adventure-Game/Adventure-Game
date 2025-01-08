@@ -2,13 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 import Choices from '../components/Choices';
 import { fetchStoryNode } from '../api';
 import '../styles.css';
-// import { ReactTyped } from 'react-typed';
+import { ReactTyped } from 'react-typed';
 
 const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
   const [error, setError] = useState(null);
   const [audioFile, setAudioFile] = useState(null);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const audioRef = useRef(null);
 
   const audioCache = {
@@ -49,6 +50,11 @@ const GamePage = () => {
     }
   };
 
+  const handleAudio = async () => {
+    setIsPlaying(!isPlaying);
+    isPlaying ? audioRef.current.pause() : audioRef.current.play();
+  };
+
   const handleChoice = async (nextNodeId) => {
     try {
       const node = await fetchStoryNode(nextNodeId);
@@ -71,7 +77,9 @@ const GamePage = () => {
             <source src={audioFile} type='audio/mpeg' />
             Your browser does not support the audio element.
           </audio>
-
+          <button onClick={handleAudio}>
+            {isPlaying ? 'Pause Audio' : 'Play Audio'}
+          </button>
           <h1 className={`${currentNode.location}-h1`}>
             <ReactTyped
               strings={[currentNode.title]}
