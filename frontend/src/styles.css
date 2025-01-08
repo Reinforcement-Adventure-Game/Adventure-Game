@@ -151,7 +151,7 @@ body {
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  background-image: url('./assets/heavenly.gif');
+  background-image: url('./assets/heaven.gif');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -182,7 +182,7 @@ body {
 }
 .heavenly-choiceButton {
   background-color: rgb(255, 214, 79, 0.6);
-  color: #ffedc9;
+  color: #484131;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-family: 'Jersey 15', sans-serif;
