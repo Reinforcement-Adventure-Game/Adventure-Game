@@ -38,9 +38,25 @@ const GamePage = () => {
     if (currentNode && currentNode.location) {
       const file = audioCache[currentNode.location];
       console.log('Setting audio file:', file);
+      console.log('location choice', currentNode.location);
+      console.log('cache location match', audioCache[currentNode.location]);
+      console.log('audioFile', audioFile);
       setAudioFile(file);
     }
   }, [currentNode]);
+
+  useEffect(() => {
+    if (audioRef.current && audioFile) {
+      audioRef.current.load(); // Reloads the audio with the new source
+      if (isPlaying) {
+        audioRef.current.play().catch((err) => {
+          console.error('Audio playback failed:', err);
+        });
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [audioFile, isPlaying]);
 
   const handleStartGame = () => {
     setHasInteracted(true);
@@ -61,6 +77,10 @@ const GamePage = () => {
     try {
       const fetchedNode = await fetchStoryNode(nextNodeId);
       setCurrentNode(fetchedNode);
+      setAudioFile(audioCache[fetchedNode.location]);
+      console.log('location choice', fetchedNode.location);
+      console.log('cache location match', audioCache[fetchedNode.location]);
+      console.log('audioFile', audioFile);
     } catch (err) {
       setError(err.message);
     }
