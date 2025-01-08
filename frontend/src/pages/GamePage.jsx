@@ -6,6 +6,7 @@ import { ReactTyped } from 'react-typed';
 
 const GamePage = () => {
   const [currentNode, setCurrentNode] = useState(null);
+  const [history, setHistory] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -23,10 +24,21 @@ const GamePage = () => {
 
   const handleChoice = async (nextNodeId) => {
     try {
+      if (currentNode) {
+        setHistory([currentNode]);
+      }
       const node = await fetchStoryNode(nextNodeId);
       setCurrentNode(node);
     } catch (err) {
       setError(err.message);
+    }
+  };
+
+  const handleBack = () => {
+    if (history.length > 0) {
+      const lastNode = history[history.length - 1];
+      setHistory((prev) => prev.slice(0, -1));
+      setCurrentNode(lastNode);
     }
   };
 
@@ -55,6 +67,11 @@ const GamePage = () => {
           />
         ))}
       </div>
+      {history.length > 0 && (
+        <button onClick={handleBack} className={`${currentNode.location}-backButton`}>
+          Back
+        </button>
+      )}
     </div>
   );
 };

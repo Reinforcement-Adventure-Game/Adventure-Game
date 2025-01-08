@@ -197,7 +197,7 @@ const storyNodes = [
   ),
   new StoryBeat(
     13,
-    'the OSPhelion',
+    'The Osphelion',
     'You lay eyes on this winged creature, which resembles a cross between an owl and a serpent, with shimmering feathers that glisten in the orange glow of the flames. You’ve heard of this monster in legends, the Osphelion, known for its cunning nature and paralyzing gaze. It’s bright yellow eyes are piercing, it’s looking right at you.',
     [
       {

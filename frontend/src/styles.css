@@ -1,252 +1,333 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 .choice-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 }
 
 /* Start Location Theme */
 .start-container {
-  background-image: url('./assets/start.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffedc9;
+	background-image: url('./assets/start.gif');
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ffedc9;
 }
 .start-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #171513;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: #171513;
 }
 .start-p {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border: 2px solid #ffedc9;
-  border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
-  background-color: rgba(23, 21, 19, 0.5);
-  max-width: 90%;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.5rem;
+	border: 2px solid #ffedc9;
+	border-radius: 0.5rem;
+	padding: 1rem 1.25rem;
+	background-color: rgba(23, 21, 19, 0.5);
+	max-width: 90%;
 }
 .start-choiceButton {
-  background-color: rgba(23, 21, 19, 0.5);
-  color: #ffedc9;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	background-color: rgba(23, 21, 19, 0.5);
+	color: #ffedc9;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
 }
+.start-backButton {
+	background-color: rgba(23, 21, 19, 0.5);
+	color: #ffedc9;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.start-backButton:hover {
+	border-color: #ffdc98;
+	color: #ffedc9;
+}
+
 .start-choiceButton:hover {
-  border-color: #ffdc98;
-  color: #ffedc9;
+	border-color: #ffdc98;
+	color: #ffedc9;
 }
 
 /* Forest Theme */
 .forest-container {
-  background-image: url('./assets/flare.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #feffe3;
+	background-image: url('./assets/flare.gif');
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #feffe3;
 }
 .forest-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #44724d;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: #44724d;
 }
 .forest-p {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border-radius: 1rem;
-  padding: 1rem 1.25rem;
-  background-color: rgba(68, 114, 77, 0.4);
-  margin-left: 2rem;
-  margin-right: 2rem;
-  max-width: 90%;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.5rem;
+	border-radius: 1rem;
+	padding: 1rem 1.25rem;
+	background-color: rgba(68, 114, 77, 0.4);
+	margin-left: 2rem;
+	margin-right: 2rem;
+	max-width: 90%;
 }
 .forest-choiceButton {
-  background-color: rgba(68, 114, 77, 0.4);
-  color: #feffe3;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	background-color: rgba(68, 114, 77, 0.4);
+	color: #feffe3;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.forest-backButton {
+	background-color: rgba(68, 114, 77, 0.4);
+	color: #feffe3;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+}
+.forest-backButton:hover {
+	background-color: #44724d;
+	border-color: #fbfbfb;
+	color: #fbfbfb;
 }
 .forest-choiceButton:hover {
-  background-color: #44724d;
-  border-color: #fbfbfb;
-  color: #fbfbfb;
+	background-color: #44724d;
+	border-color: #fbfbfb;
+	color: #fbfbfb;
 }
 
 /* Cave Theme */
 .cave-container {
-  background-image: url('./assets/blackglow.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffedc9;
-  flex-wrap: nowrap;
-  max-width: 100%;
+	background-image: url('./assets/blackglow.gif');
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ffedc9;
+	flex-wrap: nowrap;
+	max-width: 100%;
 }
 .cave-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
 }
 .cave-p {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border: 2px solid #ffedc9;
-  border-radius: 1rem;
-  padding: 1rem 1.25rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  background-color: rgba(23, 21, 19, 0.5);
-  max-width: 90%;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.5rem;
+	border: 2px solid #ffedc9;
+	border-radius: 1rem;
+	padding: 1rem 1.25rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	background-color: rgba(23, 21, 19, 0.5);
+	max-width: 90%;
 }
 .cave-choiceButton {
-  background-color: rgba(23, 21, 19, 0.5);
-  color: #ffedc9;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	background-color: rgba(23, 21, 19, 0.5);
+	color: #ffedc9;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.cave-backButton {
+	background-color: rgba(23, 21, 19, 0.5);
+	color: #ffedc9;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+}
+.cave-backButton:hover {
+	background-color: #171513;
+	border-color: #ffdc98;
+	color: #ffedc9;
 }
 .cave-choiceButton:hover {
-  background-color: #171513;
-  border-color: #ffdc98;
-  color: #ffedc9;
+	background-color: #171513;
+	border-color: #ffdc98;
+	color: #ffedc9;
 }
 
 /* Heavenly Location Theme */
 .heavenly-container {
-  background-image: url('./assets/heaven.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffedc9;
+	background-image: url('./assets/heaven.gif');
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #ffedc9;
 }
 .heavenly-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #171513;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: #171513;
 }
 .heavenly-p {
-  background-color: (23, 21, 19, 0.5);
-  color: #ffedc9;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border-radius: 1rem;
-  padding: 1rem 1.25rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  max-width: 90%;
+	background-color: (23, 21, 19, 0.5);
+	color: #ffedc9;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.5rem;
+	border-radius: 1rem;
+	padding: 1rem 1.25rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	max-width: 90%;
 }
 .heavenly-choiceButton {
-  background-color: (23, 21, 19, 0.5);
-  color: #484131;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	background-color: (23, 21, 19, 0.5);
+	color: #484131;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.heavenly-backButton {
+	background-color: (23, 21, 19, 0.5);
+	color: #484131;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+}
+.heavenly-backButton:hover {
+	border-color: #ffdc98;
+	color: #ffedc9;
+	border-color: #ffffff;
 }
 .heavenly-choiceButton:hover {
-  border-color: #ffdc98;
-  color: #ffedc9;
-  border-color: #ffffff;
+	border-color: #ffdc98;
+	color: #ffedc9;
+	border-color: #ffffff;
 }
 
 /* Fire Theme */
 .fireycave-container {
-  background-image: url('./assets/fire.gif');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f37d15;
+	background-image: url('./assets/fire.gif');
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #f37d15;
 }
 .fireycave-h1 {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 4rem;
-  font-weight: bold;
-  color: #f37d15;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	color: #f37d15;
 }
 .fireycave-p {
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  padding: 1rem 1.25rem;
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  max-width: 90%;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.5rem;
+	border-radius: 0.5rem;
+	padding: 1rem 1.25rem;
+	background-color: rgba(179, 48, 5, 0.5);
+	color: #f37d15;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	max-width: 90%;
 }
 .fireycave-choiceButton {
-  background-color: rgba(179, 48, 5, 0.5);
-  color: #f37d15;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-  font-family: 'Jersey 15', sans-serif;
-  font-size: 1.25rem;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+	background-color: rgba(179, 48, 5, 0.5);
+	color: #f37d15;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+.fireycave-backButton {
+	background-color: rgba(179, 48, 5, 0.5);
+	color: #f37d15;
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	font-family: 'Jersey 15', sans-serif;
+	font-size: 1.25rem;
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+}
+.fireycave-backButton:hover {
+	border-color: #ff9602;
+	color: #f37d15;
 }
 .fireycave-choiceButton:hover {
-  border-color: #ff9602;
-  color: #f37d15;
+	border-color: #ff9602;
+	color: #f37d15;
 }
