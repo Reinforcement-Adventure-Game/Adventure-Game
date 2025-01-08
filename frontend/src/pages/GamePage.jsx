@@ -103,6 +103,11 @@ const GamePage = () => {
 
   return (
     <div className={`${currentNode.location}-container`}>
+      {history.length > 0 && (
+        <button className='btn-audio' onClick={handleAudio}>
+          {isPlaying ? 'Pause Audio' : 'Play Audio'}
+        </button>
+      )}
       {!hasInteracted ? (
         <button onClick={handleStartGame}>Start Game</button>
       ) : (
@@ -111,9 +116,6 @@ const GamePage = () => {
             <source src={audioFile} type='audio/mpeg' />
             Your browser does not support the audio element.
           </audio>
-          <button onClick={handleAudio}>
-            {isPlaying ? 'Pause Audio' : 'Play Audio'}
-          </button>
           <h1 className={`${currentNode.location}-h1`}>
             <ReactTyped
               strings={[currentNode.title]}
